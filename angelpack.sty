@@ -1,0 +1,112 @@
+\usepackage{graphicx}
+\usepackage{datetime}
+\newdateformat{monthdayyeardate}{%
+  \monthname[\THEMONTH]~\THEDAY, \THEYEAR}
+%%%%%%%%%%%%%%%%   Line Spacing   %%%%%%%%%%%%%%%%
+\usepackage{setspace}
+\setstretch{1}
+
+%%%%%%%%%%%%%%%%       Margins    %%%%%%%%%%%%%%%%
+\usepackage[ansiapaper, top=0.4in, bottom=0.8in, left=0.50in, right=0.50in]{geometry}
+%\usepackage{calc}
+
+%%%%%%%%%%%%%%%%        Font      %%%%%%%%%%%%%%%%
+\usepackage[T1]{fontenc}
+%\usepackage[lmss]{lmodern}
+%\usepackage{mlmodern}
+%\usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{plex-sans}
+%\usepackage[sfdefault]{FiraSans}
+\renewcommand\familydefault{\sfdefault}
+\usepackage{ragged2e}
+
+%%%%%%%%%   Section Heading Formatting   %%%%%%%%%
+\usepackage{titlesec}
+\usepackage{indentfirst}
+
+\titleformat{\section}
+  {\large\bfseries\uppercase} % section formatting
+  {} % section numbering
+  {0em} % distance between numbering and section title
+  {} % before command
+  [] % after command
+
+\titlespacing{\section}
+  {0em} % left indent
+  {0.4em} % top margin
+  {0.1em} % bottom margin
+
+\titleformat{\subsection}[runin]
+  {\bfseries} % section formatting
+  {} % section numbering
+  {0em} % distance between numbering and section title
+  {} % before command
+  [\:] % after command
+
+\titlespacing{\subsection}
+  {\parindent} % left indent
+  {0em} % top margin
+  {0em} % bottom margin
+
+%%%%%%%%%%    Resume Title Formatting   %%%%%%%%%%
+\usepackage{titling}
+\author{Ángel Castañeda}
+\newcommand{\website}[0]{
+  \href{https://www.acsq.me}
+  {www.acsq.me}
+}
+\newcommand{\email}[0]{
+  \href{mailto:angel@acsq.me}
+  {angel@acsq.me}
+}
+\newcommand{\github}[0]{
+  \href{https://github.com/acsqdotme}
+  {github.com/acsqdotme}
+}
+
+%%%%%%%%%%%%%%%%% left-right title
+%\renewcommand{\maketitle}[0]{\noindent{\Huge
+%\textbf{\theauthor}}
+%  \hfill\email
+%}
+
+%%%%%%%%%%%%%%%%% center title
+\renewcommand{\maketitle}[0]{
+  \begin{center}
+    {\huge\textbf{\theauthor}}
+    \vspace{0.1em}
+     
+    \email · \website · \github
+  \end{center}
+  \vspace{-4.1mm}
+}
+
+%%%%%%%%%%%%%%    URL coloring    %%%%%%%%%%%%%%%%
+\usepackage[colorlinks]{hyperref}
+\usepackage{xcolor}
+%\usepackage{soul}
+\hypersetup{
+  colorlinks,
+  urlcolor=[HTML]{00a3cc}%{00b8e6}%{008fb3}
+} 
+
+%%%%%%%%%%%%            Footer         %%%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[C]{
+  \footnotesize \LaTeX{} source code is found at 
+  \href{https://git.acsq.me/cv}{git.acsq.me/cv}
+}
+
+%%%%%%%%%%%%     Nice bullet points    %%%%%%%%%%%
+\usepackage{enumitem}
+
+     
+%%%%%%%%%%%%     Set indent size       %%%%%%%%%%%
+\setlength{\parindent}{0.3em}
+
+%\newlength{\remaining}
