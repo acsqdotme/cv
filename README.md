@@ -66,3 +66,9 @@ something much cleaner than whatever word or google docs could ever do.
 Here's the [video that got me started](https://youtu.be/kMPCdUSsITE) and a 
 [set of videos](https://youtu.be/VjsX4tznW40) showing how cool vim and latex 
 can really be for a resume.
+
+## TODO
+
+* actually make acsq portfolio website
+* figure out latex -> html for cool website integration
+* finish more projects to put on there
