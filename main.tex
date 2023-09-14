@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%             Ángel Castañeda Résumé
+%        src available at git.acsq.me/cv
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{angelpack}
+
+%%%%%%%%%%%%   Paragraph Gap Spacing   %%%%%%%%%%%
+\newcommand{\itemspace}{\vspace{0.1870em}}
+
+%%%%%%%%%%%%   Small Caps Redefine     %%%%%%%%%%%
+\renewcommand{\textsc}[1]{\uppercase{\footnotesize#1}\normalsize}
+% some fonts are complete trash and scrap this, so I need to use this
+
+%%%%%%%%%%%  Triple Items for Exams %%%%%%%%%%%%%%
+\newcommand\textbox[1]
+    {\parbox{.375\textwidth}{#1}} % < value has to be set manually depending on font
+
+%% Shows borders - useful for troubleshooting %%%%
+%\usepackage{showframe}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Header
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+\vspace{-2.8mm}
+\noindent\hrulefill
+
+\vspace{-4.5mm}
+\noindent\hrulefill
+
+\itemspace
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               Summary/Objective
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+
+\hangindent=\parindent % adds indent to second line
+Senior actuarial science student seeking full time position for the summer of
+2024. Bring considerable experience in programming \& maintaining projects,
+strong leadership skills, and a passion to learn.
+
+\itemspace
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                Actuarial Exams
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Actuarial Exams}
+
+%%%%%%%%%%%%     Three Exams    %%%%%%%%%%%%%%%%%%
+
+\textbox{\subsection{P:} {Mar 2022}\hfill}
+\textbox{\hfil \subsection{FM:} {Feb 2023}}
+\textbox{\hfill\subsection{FAM:} {Mar 2024 (sitting)}}
+
+\itemspace
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 Technical Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+
+\subsection{Languages:} \:
+Spanish · \textsc{sql} · \textsc{r} · Python · \textsc{html} · \textsc{css} ·
+JavaScript · \textsc{go} · \LaTeX{} · Bash · Scheme Lisp
+
+\subsection{Programs:} \:
+Excel · Access · RStudio · git ·  Linux · \textsc{MATLAB} · Neovim
+
+\itemspace
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+
+%%%%%%%%%%%%%%%%%       MSOE       %%%%%%%%%%%%%%%
+\subsection{Milwaukee School of Engineering} \hfill Milwaukee, WI
+
+B.S. Actuarial Science · GPA: 3.4 \hfill Expected May 2024
+
+\begin{itemize}[noitemsep,nolistsep]
+  \item VP of education, exams, and studying for Mathematics \& Actuarial
+    Science Club senior year.
+
+  \item German Club VP senior year, Historical Society photographer junior
+    year, and Student Union
+
+    Board treasurer sophomore year.
+
+  \item Independent study on measure theory with mathematics professor.
+\end{itemize}
+
+\textbf{\textit{Select Coursework}:} \,Database Mgmt. (\textsc{ms sql}) ·
+Time Series Analysis (\textsc{R}) · Professional Presentations
+
+\itemspace
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               Work Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Work \& Internship Experience}
+
+%%%%%%%%%%     Tax Preparer w/ Centro    %%%%%%%%%
+\subsection{Tax Preparer \& Sys Admin}
+· Centro San Miguel, Milwaukee, WI \hfill Nov 2019 -- Present
+
+\begin{itemize}[noitemsep,nolistsep]
+  \item Prepare individual taxes, notarize affidavits, and translate documents
+    from Spanish to English
+
+  \item Set up and maintain website and email services on VPS.
+\end{itemize}
+
+\itemspace
+
+%%%%%%%%%%%%      Tutor w/ RCAS   %%%%%%%%%%%%%%%%
+\subsection{University Tutor}
+· MSOE, Milwaukee, WI \hfill Nov 2022 -- May 2023
+
+\begin{itemize}[noitemsep,nolistsep]
+  \item CRLA I certified tutor for FM study sessions and college math classes.
+\end{itemize}
+
+\itemspace
+
+%%%%%%%%%%%%   Internship w/ GLAS   %%%%%%%%%%%%%%
+\subsection{Office Management Intern}
+· GLAS Education, Williams Bay, WI  \hfill Jun 2019 -- Aug 2019
+
+\begin{itemize}[noitemsep,nolistsep]
+  \item Handled daily office duties including mail, business/school outreach,
+    and supply organization.
+
+  \item Organized team of high school students to educate public about light
+    pollution.
+\end{itemize}
+
+\itemspace
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Featured Projects}
+
+%%%%%%%%%%%%%%       SICP          %%%%%%%%%%%%%%%%
+\subsection{\textit{Structure \& Interpretation of Computer Progams}} ·
+\href{https://git.acsq.me/sicp/about/}{git.acsq.me/sicp}
+\hfill Aug 2023 -- Present
+
+\begin{itemize}[noitemsep,nolistsep]
+  \item Self-studying MIT's classic book to get a better fundamental
+    understanding of recursion, blackbox abstraction, and the gaps between computer
+    science and mathematics with Scheme Lisp.
+\end{itemize}
+
+\itemspace
+
+%%%%%%%%%%%%%%         Site Hosting    %%%%%%%%%%%%
+\subsection{Web \& Email Server Hosting} ·
+\href{https://www.acsq.me/sites}{www.acsq.me/sites}
+\hfill Apr 2023 -- Present
+
+\begin{itemize}[noitemsep,nolistsep]
+  \item Create and maintain dynamic blogs/websites and email servers for
+    friends and family.
+
+  \item Use Nginx, \textsc{go} http servers, and SQLite3/BoltDB for databases.
+\end{itemize}
+
+\itemspace
+
+%%%%%%%%%   Measure Theory w/ Dr. Armstrong %%%%%%
+%\subsection{Measure Theory Independent Study}  \hfill Mar 2022 -- May 2022
+%\begin{itemize}[noitemsep,nolistsep]
+%  \item Worked with math professor to learn triangle inequality proofs,
+%  epsilon-delta ball proofs, and an introduction to Lebesgue measures.
+%\end{itemize}
+%\itemspace
+
+%%%%%%%%%%%  P&C Climate Change Prez   %%%%%%%%%%%
+\subsection{\textit{The Claim Before the Storm} Webinar} \hfill Oct 2021
+
+\begin{itemize}[noitemsep,nolistsep]
+  \item Virtual presentation on climate change and how P\&C companies are
+    adapting to it.
+
+  %\item Audience intended to be seniors in high school interested in
+  %  actuarial science.
+
+  \item Custom-designed slides, group activities, and broken down info for
+    audience comprehension.
+\end{itemize}
+
+\itemspace
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               Hobbies/Interests
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hobbies \& Interests}
+
+Reading · History · Deutsch · Photography · The Beatles · Cultural Exchange
+
+\end{document}
