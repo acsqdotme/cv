@@ -1,0 +1,10 @@
+# nonsense output
+*.log
+*.aux
+*.out
+
+# you can find compiled pdf at acsq.me/cv
+*.pdf
+
+# probably don't want my signature out there...
+angelsignature.png
