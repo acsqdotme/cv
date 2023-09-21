@@ -71,3 +71,8 @@ can really be for a resume.
 
 * actually make acsq portfolio website
 * figure out latex -> html for cool website integration
+
+## License
+
+This project is under the zero-BSD license. Check [LICENSE](./LICENSE) for more
+details.
