@@ -71,5 +71,3 @@ can really be for a resume.
 
 * actually make acsq portfolio website
 * figure out latex -> html for cool website integration
-* finish more projects to put on there
-* add "last updated" date on resume instead of just using file name
