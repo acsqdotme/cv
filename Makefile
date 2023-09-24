@@ -1,6 +1,7 @@
 .DEFAULT_GOAL := cv
 
 OUT_CLEAN = rm -fv *.log *.aux *.out
+LATEX_PACKAGER = grep '^\s*\\usepackage' *.tex *.sty | sed 's/.*{\(.*\)}.*/\1.sty/' | sort | uniq
 
 cv:
 	pdflatex main.tex
@@ -18,3 +19,7 @@ clean:
 	$(OUT_CLEAN)
 	rm -fv *.pdf
 .PHONY:clean
+
+builder:
+	# gotta make this actually do something.
+.PHONY:builder
