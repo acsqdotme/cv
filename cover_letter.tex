@@ -9,6 +9,14 @@
 \usepackage{angelpack}
 %\usepackage{calc}
 
+%%%%%%%%%     add signature at bottom     %%%%%%%%
+\usepackage{graphicx}
+
+%%%%%%%%%     automates date at top       %%%%%%%%
+\usepackage{datetime}
+\newdateformat{monthdayyeardate}{%
+  \monthname[\THEMONTH]~\THEDAY, \THEYEAR}
+
 %%%%%%%%%%%%   Paragraph Gap Spacing   %%%%%%%%%%%
 \newcommand{\itemspace}{\vspace{0.5em}}
 
