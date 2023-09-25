@@ -1,0 +1,34 @@
+name: Ángel's Résumé CI/CD
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: get repo
+        uses: actions/checkout@v2
+
+      - name: setup
+        run: |
+          sudo apt update && sudo apt upgrade
+          sudo apt install -y rsync texlive-full make
+
+      - name: run
+        run: |
+          make
+
+      - name: ssh setup
+        uses: shimataro/ssh-key-action@v2
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          name: id_rsa
+          known_hosts: angel-castaneda.com
+
+      - name: deploy with rsync
+        run: |
+          rsync -uvzP cv.pdf deploy@angel-castaneda.com:/var/www/angel-castaneda.com/static/files/github-cv.pdf
