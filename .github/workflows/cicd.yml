@@ -22,13 +22,8 @@ jobs:
         run: |
           make
 
-      - name: ssh setup
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          name: id_rsa
-          known_hosts: angel-castaneda.com
-
       - name: deploy with rsync
         run: |
-          rsync -uvzP cv.pdf deploy@angel-castaneda.com:/var/www/angel-castaneda.com/static/files/github-cv.pdf
+          echo ${{ secrets.DEPLOY_KEY }} > deploy_key
+          chmod 600 ./deploy_key
+          rsync -uvzP -e 'ssh -i ./deploy_key -o StrictHostKeyChecking=no' cv.pdf deploy@angel-castaneda.com:/var/www/angel-castaneda.com/static/files/github-cv.pdf
