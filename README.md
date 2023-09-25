@@ -4,21 +4,32 @@ Last year, I did a favor for my friend's dad and made him a new cv in
 $\LaTeX{}$. I ended up converting my own cv and have maintained it on and off
 ever since.
 
-I was inspired by [EJ Mastnak](https://www.ejmastnak.com) to finally do the sensible thing
-and version control my code instead of making more and more copies of it on
-Overleaf.
+I was inspired by [EJ Mastnak](https://www.ejmastnak.com) to finally do the
+sensible thing and version control my code instead of making more and more
+copies of it on Overleaf.
 
 ## Getting a PDF
 
-you can self compile by cloning this repo and just running `make` to get my cv
-or `make cover` to get my (unsigned) cover letter template.
+This repos is continuously integrated with
+[sourcehut](https://sr.ht/~acsqdotme/cv). Binaries are compiled according to
+the `.build.yml` file.
 
-Or just visit [www.acsq.me/cv](https://www.acsq.me) to make it easy.
+Just visit
+[www.angel-castaneda.com/cv.pdf](https://www.angel-castaneda.com/cv.pdf)
+to see the results.
+
+Or, you can self compile by cloning this repo and just running `make` to get my
+cv or `make cover` to get my (unsigned) cover letter template. I detail
+dependencies below.
 
 ## How to make your own:
 
-If you wanna graduate from overleaf too, you gotta install packages first. On
-arch, I ran:
+If you don't know much about git or syncthing or keeping code synchronized
+together, [overleaf](https://overleaf.com) is a great place to start learning
+TeX. If you wanna be cool and compile your own code, you gotta install packages
+first.
+
+On arch, I ran:
 
 ```console
 $ sudo pacman -S texlive
