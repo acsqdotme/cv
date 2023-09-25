@@ -60,8 +60,8 @@ there's a bunch of output files like `main.log` and `main.aux` that get made,
 but they're only useful for debugging your broken code. open `main.pdf` to see
 the end product.
 
-That's an absolute start, but you can get really way into it and make
-something much cleaner than whatever word or google docs could ever do.
+That's an absolute start, but you can get way into it and make something more
+customizable than whatever word or google docs could ever do.
 
 Here's the [video that got me started](https://youtu.be/kMPCdUSsITE) and a
 [set of videos](https://youtu.be/VjsX4tznW40) showing how cool vim and latex
