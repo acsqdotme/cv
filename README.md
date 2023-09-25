@@ -69,8 +69,8 @@ main.aux  main.log  main.pdf  main.tex
 
 there's a bunch of output files like `main.log` and `main.aux` that get made,
 but they're usually debugging your broken code. open `main.pdf` to see the end
-product. (**I do wanna add that in my case, pdflatex runs twice on main.tex to
-generate those output files to make my pdf index toc. **)
+product. ( *I do wanna add that in my case, pdflatex runs twice on main.tex to
+generate those output files to make my pdf index toc.* )
 
 That's an absolute start, but you can get way into it and make something more
 customizable than whatever word or google docs could ever do.
