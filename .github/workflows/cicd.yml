@@ -16,7 +16,7 @@ jobs:
       - name: setup
         run: |
           sudo apt update && sudo apt upgrade
-          sudo apt install -y rsync texlive-full make
+          sudo apt install -y rsync make texlive-latex-extra texlive-fonts-extra
 
       - name: run
         run: |
