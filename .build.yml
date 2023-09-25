@@ -17,4 +17,4 @@ tasks:
       make
   - deploy: |
       echo "StrictHostKeyChecking=no" >> ~/.ssh/config
-      rsync -uvzP ~/cv/cv.pdf deploy@angel-castaneda.com:new.pdf
+      rsync -uvzP ~/cv/cv.pdf deploy@angel-castaneda.com:/var/www/angel-castaneda.com/static/files/cv.pdf
