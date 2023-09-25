@@ -1,0 +1,19 @@
+image: archlinux
+secrets:
+  - c0d2aaa9-4e94-4d85-8ac9-259ab244bf3b
+packages:
+  - rsync
+  - make
+  - texlive-latexrecommended
+  - texlive-fontsextra
+  - texlive-latexextra
+sources:
+  - https://git.sr.ht/~acsqdotme/cv
+tasks: 
+  - setup: |
+      echo "setting up"
+  - build: |
+      cd ~/cv
+      make
+  - deploy: |
+      rsync -uvzP -e 'ssh -i ~/.ssh/id_rsa' ~/cv/cv.pdf deploy@angel-castaneda.com:new.pdf
