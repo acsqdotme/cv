@@ -25,7 +25,7 @@ jobs:
       - name: ssh setup
         uses: shimataro/ssh-key-action@v2
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_rsa
           known_hosts: angel-castaneda.com
 
