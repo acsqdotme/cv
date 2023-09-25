@@ -12,7 +12,7 @@ copies of it on Overleaf.
 
 This repos is continuously integrated with
 [sourcehut](https://sr.ht/~acsqdotme/cv). Binaries are compiled according to
-the `.build.yml` file.
+the [`.build.yml`](./.build.yml) file.
 
 Just visit
 [www.angel-castaneda.com/cv.pdf](https://www.angel-castaneda.com/cv.pdf)
