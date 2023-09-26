@@ -12,6 +12,7 @@ cv:
 
 cover:
 	pdflatex cover_letter.tex
+	pdflatex cover_letter.tex # not sure if I really need this
 	$(OUTPUT_CLEANER)
 .PHONY:cover
 
