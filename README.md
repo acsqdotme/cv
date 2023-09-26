@@ -81,5 +81,5 @@ can really be for a resume.
 
 ## License
 
-This project is under the zero-BSD license. Check [LICENSE](./LICENSE) for more
+This project is under the Zero-Clause BSD license. Check [`LICENSE`](./LICENSE) for more
 details.
