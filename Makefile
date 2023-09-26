@@ -1,22 +1,22 @@
 .DEFAULT_GOAL := cv
 
-OUT_CLEAN = rm -fv *.log *.aux *.out
+OUTPUT_CLEANER = rm -fv *.log *.aux *.out
 LATEX_PACKAGER = grep '^\s*\\usepackage' *.tex *.sty | sed 's/.*{\(.*\)}.*/\1.sty/' | sort | uniq
 
 cv:
 	pdflatex main.tex
 	pdflatex main.tex # for getting pdf index
-	$(OUT_CLEAN)
+	$(OUTPUT_CLEANER)
 	mv main.pdf cv.pdf
 .PHONY:cv
 
 cover:
 	pdflatex cover_letter.tex
-	$(OUT_CLEAN)
+	$(OUTPUT_CLEANER)
 .PHONY:cover
 
 clean:
-	$(OUT_CLEAN)
+	$(OUTPUT_CLEANER)
 	rm -fv *.pdf
 .PHONY:clean
 
