@@ -17,5 +17,6 @@ tasks:
       make
   - deploy: |
       ssh-keyscan -H angel-castaneda.com >> ~/.ssh/known_hosts
+      ssh-keyscan -H acsq.me >> ~/.ssh/known_hosts
       rsync -uvzP ~/cv/cv.pdf deploy@angel-castaneda.com:/var/www/angel-castaneda.com/static/files/cv.pdf
       rsync -uvzP ~/cv/cv.pdf vultr@acsq.me:/var/www/acsq.me/static/files/cv.pdf
