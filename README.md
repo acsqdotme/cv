@@ -15,7 +15,7 @@ This repos is continuously integrated with
 the [`.build.yml`](./.build.yml) file.
 
 Just visit
-[www.angel-castaneda.com/cv.pdf](https://www.angel-castaneda.com/cv.pdf)
+[www.acsq.me/cv.pdf](https://www.acsq.me/cv.pdf)
 to see the results.
 
 Or, you can self compile by cloning this repo and just running `make` to get my
