@@ -11,7 +11,7 @@ copies of it on Overleaf.
 ## Getting a PDF
 
 This repos is continuously integrated with
-[sourcehut](https://sr.ht/~acsqdotme/cv). Binaries are compiled according to
+[sourcehut](https://builds.sr.ht/~acsqdotme). Binaries are compiled according to
 the [`.build.yml`](./.build.yml) file.
 
 Just visit
