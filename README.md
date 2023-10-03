@@ -10,6 +10,8 @@ copies of it on Overleaf.
 
 ## Getting a PDF
 
+[![builds.sr.ht status](https://builds.sr.ht/~acsqdotme/cv/commits/master/.build.yml.svg)](https://builds.sr.ht/~acsqdotme/cv/commits/master/.build.yml?)
+
 This repos is continuously integrated with
 [sourcehut](https://builds.sr.ht/~acsqdotme). Binaries are compiled according to
 the [`.build.yml`](./.build.yml) file.
