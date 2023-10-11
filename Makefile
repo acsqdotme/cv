@@ -1,6 +1,10 @@
 .DEFAULT_GOAL := cv
 
 OUTPUT_CLEANER = rm -fv *.log *.aux *.out
+
+# this is gonna be for whenever I figure out how to semantically install LaTeX
+# packages individually instead of destroy a VM's time with installing 2gb of
+# TeXLive
 LATEX_PACKAGER = grep '^\s*\\usepackage' *.tex *.sty | sed 's/.*{\(.*\)}.*/\1.sty/' | sort | uniq
 
 cv:
