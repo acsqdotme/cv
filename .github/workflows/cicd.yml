@@ -27,9 +27,12 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_rsa
-          known_hosts: 69.61.2.226
+          known_hosts: angel-castaneda.com
+
+      - name: Known Host Trick
+        run: ssh-keyscan -H angel-castaneda.com >> ~/.ssh/known_hosts
 
       - name: Deploy with Rsync
         run: |
           pwd
-          rsync -uvzP cv.pdf deploy@69.61.2.226:/var/www/angel-castaneda.com/static/files/github-cv.pdf
+          rsync -uvzP cv.pdf deploy@angel-castaneda.com:/var/www/angel-castaneda.com/static/files/github-cv.pdf
