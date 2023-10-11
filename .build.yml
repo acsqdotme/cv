@@ -9,7 +9,7 @@ packages:
   - texlive-latexextra
 sources:
   - https://git.sr.ht/~acsqdotme/cv
-tasks: 
+tasks:
   - setup: |
       echo "setting up"
   - build: |
