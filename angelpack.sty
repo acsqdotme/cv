@@ -93,6 +93,22 @@
   \doubleline
 }
 
+%%%%%%%%%%%%%%%%% icon title
+\usepackage{moresize} % used for HUGE
+
+\renewcommand{\maketitle}[0]{
+  \noindent\begin{minipage}{0.7\textwidth}
+    {\HUGE\textbf{\theauthor}}
+  \end{minipage}
+  \begin{minipage}{0.3\textwidth}
+    \email
+
+    \website
+
+    \github
+  \end{minipage}
+}
+
 %%%%%%%%%%%%%%    URL coloring    %%%%%%%%%%%%%%%%
 \usepackage[bookmarks,colorlinks]{hyperref}
 \usepackage{xcolor}
