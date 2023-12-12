@@ -8,10 +8,14 @@
 \usepackage{angelpack}
 
 %%%%%%%%%%%%   Paragraph Gap Spacing   %%%%%%%%%%%
-\newcommand{\itemspace}{\vspace{0.3170em}}
+\newcommand{\itemspace}[0]{
+  \vspace{0.3170em}
+}
 
 %%%%%%%%%%%%   Small Caps Redefine     %%%%%%%%%%%
-\renewcommand{\textsc}[1]{\uppercase{\footnotesize#1}\normalsize}
+\renewcommand{\textsc}[1]{%
+  \uppercase{\footnotesize#1}\normalsize
+}
 % some fonts are complete trash and scrap this, so I need to use this
 
 %% Shows borders - useful for troubleshooting %%%%
