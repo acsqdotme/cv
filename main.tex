@@ -12,6 +12,20 @@
   \vspace{0.3170em}
 }
 
+%%%%%%%%%%%%   Project Section Command  %%%%%%%%%%
+\newcommand{\project}[4]{
+  \begin{minipage}[t]{0.485\textwidth}
+    \subsection{#1}
+    \href{#2}{\faLink}
+    \hfill \textit{#3}
+
+    \hangindent=1em % adds indent to second line
+    \hspace{1em}{\small #4}
+    \itemspace
+  \end{minipage}
+  \hspace{0.5mm}
+}
+
 %%%%%%%%%%%%   Small Caps Redefine     %%%%%%%%%%%
 \renewcommand{\textsc}[1]{%
   \uppercase{\footnotesize#1}\normalsize
