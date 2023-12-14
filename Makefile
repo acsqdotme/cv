@@ -6,17 +6,18 @@ OUTPUT_CLEANER = rm -fv *.log *.aux *.out
 # packages individually instead of destroy a VM's time with installing 2gb of
 # TeXLive
 LATEX_PACKAGER = grep '^\s*\\usepackage' *.tex *.sty | sed 's/.*{\(.*\)}.*/\1.sty/' | sort | uniq
+TeXCC = pdflatex
 
 cv:
-	pdflatex main.tex
-	pdflatex main.tex # for getting pdf index
+	$(TeXCC) main.tex
+	$(TeXCC) main.tex # for getting pdf index
 	$(OUTPUT_CLEANER)
 	mv main.pdf cv.pdf
 .PHONY:cv
 
 cover:
-	pdflatex cover_letter.tex
-	pdflatex cover_letter.tex # not sure if I really need this
+	$(TeXCC) cover_letter.tex
+	$(TeXCC) cover_letter.tex # double compile for consistency
 	$(OUTPUT_CLEANER)
 .PHONY:cover
 
