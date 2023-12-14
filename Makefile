@@ -9,10 +9,9 @@ LATEX_PACKAGER = grep '^\s*\\usepackage' *.tex *.sty | sed 's/.*{\(.*\)}.*/\1.st
 TeXCC = xelatex
 
 cv:
-	$(TeXCC) main.tex
-	$(TeXCC) main.tex # for getting pdf index
+	$(TeXCC) -jobname=cv main.tex
+	$(TeXCC) -jobname=cv main.tex # for getting pdf index
 	$(OUTPUT_CLEANER)
-	mv main.pdf cv.pdf
 .PHONY:cv
 
 cover:
