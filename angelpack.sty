@@ -13,9 +13,19 @@
 %\usepackage{calc}
 
 %%%%%%%%%%%%%%%%        Font      %%%%%%%%%%%%%%%%
-\usepackage[T1]{fontenc}
-\usepackage[sfdefault]{plex-sans}
-\renewcommand\familydefault{\sfdefault}
+\usepackage{fontspec}
+\setmainfont{IBMPlexSans}[%
+Extension = .otf,
+UprightFont = *-Regular,
+BoldFont = *-Bold,
+ItalicFont = *-Italic,
+BoldItalicFont = *-BoldItalic ]
+
+\newfontfamily\PlexSansLight[%
+BoldFont = IBMPlexSans-Medium.otf,
+ItalicFont = IBMPlexSans-LightItalic.otf,
+BoldItalicFont = IBMPlexSans-MediumItalic.otf ]{IBMPlexSans-Light.otf}
+
 \usepackage{ragged2e}
 
 %%%%%%%%%   Section Heading Formatting   %%%%%%%%%
