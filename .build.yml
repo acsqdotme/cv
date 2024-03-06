@@ -1,12 +1,10 @@
-image: archlinux
+image: alpine/latest
 secrets:
   - c0d2aaa9-4e94-4d85-8ac9-259ab244bf3b
 packages:
   - rsync
   - make
-  - texlive-latexrecommended
-  - texlive-fontsextra
-  - texlive-latexextra
+  - texlive-full
 sources:
   - https://git.sr.ht/~acsqdotme/cv
 tasks:
