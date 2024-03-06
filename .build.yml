@@ -8,8 +8,6 @@ packages:
 sources:
   - https://git.sr.ht/~acsqdotme/cv
 tasks:
-  - setup: |
-      echo "setting up"
   - build: |
       cd cv
       make
